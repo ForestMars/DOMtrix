@@ -1,10 +1,6 @@
 
 # AI DOM Manipulator Chrome Extension
 
-**One-liner:** Chrome Extension: AI chat sidebar for manipulating webpage content (DOM) through natural language commands.
-
----
-
 ## Features
 
 * **Natural Language Control:** Use a persistent sidebar chat to issue commands to modify the current webpage.
