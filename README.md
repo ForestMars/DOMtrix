@@ -31,7 +31,7 @@ bun install
 The build process compiles all source code (React UI, Service Worker, Content Script) into the final /dist folder.
 
 
-# Compile and prepare the /dist folder
+#### Compile and prepare the /dist folder
 `bun run build `
 3. Loading in Chrome
 Navigate to chrome://extensions in your Chrome browser.
