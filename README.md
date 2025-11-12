@@ -26,13 +26,13 @@ Clone the repository and install the dependencies:
 git clone [YOUR_REPO_URL]
 cd [your-project-name]
 bun install
+```
 2. Building the Extension
 The build process compiles all source code (React UI, Service Worker, Content Script) into the final /dist folder.
 
-Bash
 
 # Compile and prepare the /dist folder
-bun run build 
+`bun run build `
 3. Loading in Chrome
 Navigate to chrome://extensions in your Chrome browser.
 
@@ -43,7 +43,6 @@ Click the "Load unpacked" button.
 Select the /dist folder from your project directory.
 
 The extension icon should now appear in your toolbar.
-
 
 
 ### React + TypeScript + Vite
