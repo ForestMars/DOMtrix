@@ -1,3 +1,55 @@
+
+# AI DOM Manipulator Chrome Extension
+
+**One-liner:** Chrome Extension: AI chat sidebar for manipulating webpage content (DOM) through natural language commands.
+
+---
+
+## Features
+
+* **Natural Language Control:** Use a persistent sidebar chat to issue commands to modify the current webpage.
+* **DOM Manipulation:** Executes actions on the page (e.g., changing colors, hiding elements, scraping data).
+* **Manifest V3 Architecture:** Built using modern, secure extension standards.
+
+## Tech Stack
+
+* **Runtime/Package Manager:** [Bun](https://bun.sh/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **UI Framework:** React with TypeScript
+* **Architecture:** Manifest V3 (Service Workers, Content Scripts)
+
+## Getting Started (Development)
+
+This guide assumes you have [Bun](https://bun.sh/) installed globally.
+
+### 1. Setup
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone [YOUR_REPO_URL]
+cd [your-project-name]
+bun install
+2. Building the Extension
+The build process compiles all source code (React UI, Service Worker, Content Script) into the final /dist folder.
+
+Bash
+
+# Compile and prepare the /dist folder
+bun run build 
+3. Loading in Chrome
+Navigate to chrome://extensions in your Chrome browser.
+
+Enable Developer mode using the toggle in the top-right corner.
+
+Click the "Load unpacked" button.
+
+Select the /dist folder from your project directory.
+
+The extension icon should now appear in your toolbar.
+
+
+
 ### React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
