@@ -33,6 +33,7 @@ The build process compiles all source code (React UI, Service Worker, Content Sc
 
 #### Compile and prepare the /dist folder
 `bun run build `
+
 3. Loading in Chrome
 Navigate to chrome://extensions in your Chrome browser.
 
