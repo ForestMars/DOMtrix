@@ -18,9 +18,9 @@
 
 This guide assumes you have [Bun](https://bun.sh/) installed globally.
 
-### 1. Setup
+### Setup
 
-Clone the repository and install the dependencies:
+1. Clone the repository and install the dependencies:
 
 ```bash
 git clone [YOUR_REPO_URL]
