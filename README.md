@@ -14,6 +14,18 @@
 * **UI Framework:** React with TypeScript
 * **Architecture:** Manifest V3 (Service Workers, Content Scripts)
 
+## Communications Architecture
+
+Since Manifest V3 enforces separation between the different parts of the extension (UI, Service Worker, and Content Scripts), all data exchange relies on asynchronous **message passing** via the `chrome.runtime` API.
+
+The following defines the core communication channels for this project:
+
+| Sender/Receiver | Context | Channel Used |
+| :--- | :--- | :--- |
+| **Sidebar UI $\rightarrow$ Service Worker** | Popup/React $\rightarrow$ Background | `chrome.runtime.sendMessage` |
+| **Service Worker $\rightarrow$ Content Script** | Background $\rightarrow$ Host Page | `chrome.tabs.sendMessage` |
+| **Content Script $\rightarrow$ Service Worker** | Host Page $\rightarrow$ Background | `chrome.runtime.sendMessage` |
+
 ## Getting Started (Development)
 
 This guide assumes you have [Bun](https://bun.sh/) installed globally.
